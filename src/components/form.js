@@ -4,7 +4,7 @@ import axios from 'axios';
 const url = 'http://eventfulsearch.azurewebsites.net/api/v1/events/search';
 
 class Form extends React.Component {
-  state={address:'h3h2p2', reduis:9 ,datestart:'2017/07/01', dateend:'2017/07/25',category:'music'}
+  state={address:'h3h2p2', radius:9 ,datestart:'2017/07/01', dateend:'2017/07/25',category:'music'}
 
 
   handleSubmit = (event) =>

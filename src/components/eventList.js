@@ -5,8 +5,7 @@ import Event from './event';
 const EventList = (props) =>{
   return (
     <div>
-    console.log(props.events);
-      {props.events.map(event => <Event {... event} />)}
+      {props.events.map(event => <Event key={event.id} {... event} />)}
     </div>
   );
 };
