@@ -4,7 +4,7 @@ import Event from './event';
 
 const EventList = (props) =>{
   return (
-    <div>
+    <div className="search-result">
       {props.events.map(event => <Event key={event.id} {... event} />)}
     </div>
   );
