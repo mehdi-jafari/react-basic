@@ -22,7 +22,7 @@ class App extends Component {
 
         </section>
         <asid className="col-sm-1">
-          
+
         </asid>
       </div>
       </div>
