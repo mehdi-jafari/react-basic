@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import EventList from './components/eventList';
-import Form from './components/form';
+import { Router, Route, Link } from 'react-router'
 
 class App extends Component {
   state={
@@ -11,21 +10,9 @@ class App extends Component {
   };
   render() {
     return (
-      <div className="container-fluid">
-      <div className="row">
-        <asid className="col-sm-1">
-
-        </asid>
-        <section className="col-sm-10">
-          <Form onSubmit={this.populateEventList}/>
-          <EventList events= {this.state.events}/>
-
-        </section>
-        <asid className="col-sm-1">
-
-        </asid>
-      </div>
-      </div>
+       <div>
+         {this.props.children}
+       </div>
     );
   }
 }
