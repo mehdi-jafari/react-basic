@@ -12,3 +12,4 @@ header,footer {
 .search-result-item{
   padding:10px;
 }
+ .hidden { display:none; }
